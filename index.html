@@ -3,9 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>sadad</h1>
+    <header>
+        <nav class="container">
+            <div class="logo">Studio Fit Petrer</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                
+            </ul>
+            <button type="menu-toggle">☰</button>
+        </nav>
+    </header>
+    <main>
+            <section id="inicio" class="hero">
+                <div class="container">
+                    <h1>Empieza tu cambio</h1>
+                    <p>Los mejores intructores</p>
+                    <a href="#servicios" class="cta-button">Servicios</a>
+                </div>
+            </section>
+            <section id="servicios" class="service">
+                <div>
+                    <h1>Nuestros Servicios</h1>
+                    <div class="services-grid">
+                        <div class="service-card fade-in">
+                            <div class="service-image"></div>
+                            <h3>Servicio de Entrenamiento</h3>
+                            <p>Servicio de entrenamiento con Aitor Puche asesor y atleta profesional con varios años de experiencia en el campo del entrenamiento ya sea en grupos o solitario.</p>
+                            <ul class="service-features">
+                                <li>Análisis personalizado.</li>
+                                <li>Clases guiadas.</li>
+                                <li>Opcion a clases en solitario o grupos.</li>
+                            </ul>
+                            <div class="price">50€/mes</div>
+                            <div class="container"><small>El precio esta sujeto a cambios en funcion de  las características de las clases.</small></div>
+                            <button class="button" onclick="openModal('servicio_entrenamiento')">Solicitar Servicio</button>
+                        </div>
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-card fade-in">
+                            <div class="service-image"></div>
+                            <h3>Servicio de Nutrición</h3>
+                            <p>Servicio de nutrición con Ruben especializado creación de dietas como para deportistas como para la gente de a pie.</p>
+                            <ul class="service-features">
+                                <li>Análisis personalizado.</li>
+                                <li>Dietas especializadas.</li>
+                                <li>Opcion a clases en solitario o grupos.</li>
+                            </ul>
+                            <div class="price">70€</div>
+                            <div class="container"><small>El precio esta sujeto a cambios en funcion de  las características de las clases.</small></div>
+                            <button class="button" onclick="openModal('servicio_nutrición')">Solicitar Servicio</button>
+                        </div>
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-card fade-in">
+                            <div class="service-image"></div>
+                            <h3>Servicio de Psicología</h3>
+                            <p>Servicio de psicología con NOMBRE con más de 10 años de experiencia como en los campos de Inteligencia Emocional, tituladada en Psconutrición y TCA, entre otras.</p>
+                            <ul class="service-features">
+                                <li>Análisis personalizado.</li>
+                                <li>Dietas especializadas.</li>
+                                <li>Opcion a clases en solitario o grupos.</li>
+                            </ul>
+                            <div class="price">XXX€</div>
+                            <button class="button" onclick="openModal('servicio_nutrición')">Solicitar Servicio</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="about-content">
+                        <div class="abbout-text fade-in">
+                            <h2>Sobre Nosotros</h2>
+                            <p><strong>Profesionales en Nutrición Y Entrenamiento</strong></p>
+                            <p>Entrenamiento personalizado, programación de fuerza e hipertrofia, rendimiento deportivo, nutrición, para la ganancia muscular y perdida de peso.</p>
+                            <p>Nuestro equipo de expertos está comprometido con la excelencia y la satisfacción del cliente, ofreciendo servicios personalizados que se adaptan a las necesidades específicas de cada cliente.</p>
+                        </div>
+                        <div class="about-image fade-in"></div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="container">
+                    <p>&copy; 2025 Studio Fit Petrer. Todos los derechos reservados.</p>
+                    <p>Email; studiofitpetrer@gmail.com | Tel: +34 747 468 273</p>
+                </div>
+            </footer>
+        </main>
 </body>
 </html>
