@@ -207,30 +207,26 @@
             margin-bottom: 1rem;
         }
 
-    
-        /* Imagen en tarjetas de servicio */
 .service-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* recorta sin deformar */
+    object-fit: cover; 
     border-radius: 10px;
     display: block;
 }
 
-/* Contenedor de imagen del servicio */
 .service-image {
     width: 100%;
     height: 200px;
     margin-bottom: 1.5rem;
     border-radius: 10px;
     overflow: hidden;
-    background: none; /* elimina fondo anterior */
+    background: none; 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Imagen de la sección "Sobre Nosotros" */
 .about-image img {
     width: 100%;
     height: 100%;
@@ -239,10 +235,9 @@
     display: block;
 }
 
-/* Contenedor de la imagen de "Nosotros" */
 .about-image {
     height: 300px;
-    background: none; /* elimina el fondo */
+    background: none; 
     overflow: hidden;
 }
 
