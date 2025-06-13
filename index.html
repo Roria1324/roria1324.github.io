@@ -1,101 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Nuestros Servicios</title>
 </head>
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Studio Fit Petrer</div>
+            <div class="logo">TuEmpresa</div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                
             </ul>
-            <button type="menu-toggle">☰</button>
+            <button class="menu-toggle">☰</button>
         </nav>
     </header>
+
     <main>
-            <section id="inicio" class="hero">
-                <div class="container">
-                    <h1>Empieza tu cambio</h1>
-                    <p>Los mejores intructores</p>
-                    <a href="#servicios" class="cta-button">Servicios</a>
-                </div>
-            </section>
-            <section id="servicios" class="service">
-                <div>
-                    <h1>Nuestros Servicios</h1>
-                    <div class="services-grid">
-                        <div class="service-card fade-in">
-                            <div class="service-image"></div>
-                            <h3>Servicio de Entrenamiento</h3>
-                            <p>Servicio de entrenamiento con Aitor Puche asesor y atleta profesional con varios años de experiencia en el campo del entrenamiento ya sea en grupos o solitario.</p>
-                            <ul class="service-features">
-                                <li>Análisis personalizado.</li>
-                                <li>Clases guiadas.</li>
-                                <li>Opcion a clases en solitario o grupos.</li>
-                            </ul>
-                            <div class="price">50€/mes</div>
-                            <div class="container"><small>El precio esta sujeto a cambios en funcion de  las características de las clases.</small></div>
-                            <button class="button" onclick="openModal('servicio_entrenamiento')">Solicitar Servicio</button>
-                        </div>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>Servicios Profesionales de Calidad</h1>
+                <p>Soluciones innovadoras para hacer crecer tu negocio</p>
+                <a href="#servicios" class="cta-button">Ver Servicios</a>
+            </div>
+        </section>
+
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-image"></div>
+                        <h3>Servicio Premium</h3>
+                        <p>Descripción detallada del servicio premium. Aquí puedes agregar toda la información relevante sobre este servicio específico.</p>
+                        <ul class="service-features">
+                            <li>Característica 1 del servicio</li>
+                            <li>Característica 2 del servicio</li>
+                            <li>Característica 3 del servicio</li>
+                            <li>Soporte 24/7</li>
+                        </ul>
+                        <div class="price">$XXX/mes</div>
+                        <button class="service-button" onclick="openModal('Servicio Premium')">Solicitar Información</button>
                     </div>
-                    <div class="services-grid">
-                        <div class="service-card fade-in">
-                            <div class="service-image"></div>
-                            <h3>Servicio de Nutrición</h3>
-                            <p>Servicio de nutrición con Ruben especializado creación de dietas como para deportistas como para la gente de a pie.</p>
-                            <ul class="service-features">
-                                <li>Análisis personalizado.</li>
-                                <li>Dietas especializadas.</li>
-                                <li>Opcion a clases en solitario o grupos.</li>
-                            </ul>
-                            <div class="price">70€</div>
-                            <div class="container"><small>El precio esta sujeto a cambios en funcion de  las características de las clases.</small></div>
-                            <button class="button" onclick="openModal('servicio_nutrición')">Solicitar Servicio</button>
-                        </div>
+
+                    <div class="service-card fade-in">
+                        <div class="service-image"></div>
+                        <h3>Servicio Estándar</h3>
+                        <p>Descripción del servicio estándar. Perfecto para empresas medianas que buscan soluciones efectivas y asequibles.</p>
+                        <ul class="service-features">
+                            <li>Característica A del servicio</li>
+                            <li>Característica B del servicio</li>
+                            <li>Característica C del servicio</li>
+                            <li>Soporte en horario laboral</li>
+                        </ul>
+                        <div class="price">$XXX/mes</div>
+                        <button class="service-button" onclick="openModal('Servicio Estándar')">Solicitar Información</button>
                     </div>
-                    <div class="services-grid">
-                        <div class="service-card fade-in">
-                            <div class="service-image"></div>
-                            <h3>Servicio de Psicología</h3>
-                            <p>Servicio de psicología con NOMBRE con más de 10 años de experiencia como en los campos de Inteligencia Emocional, tituladada en Psconutrición y TCA, entre otras.</p>
-                            <ul class="service-features">
-                                <li>Análisis personalizado.</li>
-                                <li>Dietas especializadas.</li>
-                                <li>Opcion a clases en solitario o grupos.</li>
-                            </ul>
-                            <div class="price">XXX€</div>
-                            <button class="button" onclick="openModal('servicio_nutrición')">Solicitar Servicio</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="container">
-                    <div class="about-content">
-                        <div class="abbout-text fade-in">
-                            <h2>Sobre Nosotros</h2>
-                            <p><strong>Profesionales en Nutrición Y Entrenamiento</strong></p>
-                            <p>Entrenamiento personalizado, programación de fuerza e hipertrofia, rendimiento deportivo, nutrición, para la ganancia muscular y perdida de peso.</p>
-                            <p>Nuestro equipo de expertos está comprometido con la excelencia y la satisfacción del cliente, ofreciendo servicios personalizados que se adaptan a las necesidades específicas de cada cliente.</p>
-                        </div>
-                        <div class="about-image fade-in"></div>
+
+                    <div class="service-card fade-in">
+                        <div class="service-image"></div>
+                        <h3>Servicio Básico</h3>
+                        <p>Servicio básico ideal para pequeñas empresas o startups. Una solución completa y económica para comenzar.</p>
+                        <ul class="service-features">
+                            <li>Característica X del servicio</li>
+                            <li>Característica Y del servicio</li>
+                            <li>Característica Z del servicio</li>
+                            <li>Soporte por email</li>
+                        </ul>
+                        <div class="price">$XXX/mes</div>
+                        <button class="service-button" onclick="openModal('Servicio Básico')">Solicitar Información</button>
                     </div>
                 </div>
-            </section>
-            <footer>
-                <div class="container">
-                    <p>&copy; 2025 Studio Fit Petrer. Todos los derechos reservados.</p>
-                    <p>Email; studiofitpetrer@gmail.com | Tel: +34 747 468 273</p>
+            </div>
+        </section>
+
+        <section id="nosotros" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text fade-in">
+                        <h2>Sobre Nosotros</h2>
+                        <p>Somos una empresa líder en [tu sector] con más de [X] años de experiencia proporcionando soluciones innovadoras a empresas de todos los tamaños.</p>
+                        <p>Nuestro equipo de expertos está comprometido con la excelencia y la satisfacción del cliente, ofreciendo servicios personalizados que se adaptan a las necesidades específicas de cada negocio.</p>
+                        <p><strong>Nuestra misión:</strong> [Agregar tu misión aquí]</p>
+                        <p><strong>Nuestra visión:</strong> [Agregar tu visión aquí]</p>
+                    </div>
+                    <div class="about-image fade-in"></div>
                 </div>
-            </footer>
-        </main>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TuEmpresa. Todos los derechos reservados.</p>
+            <p>Email: info@tuempresa.com | Teléfono: +XX XXX XXX XXX</p>
+        </div>
+    </footer>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3 id="modal-title">Información del Servicio</h3>
+            <p id="modal-text">¡Gracias por tu interés! Nos pondremos en contacto contigo pronto para discutir este servicio.</p>
+            <button class="close-modal" onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+
+        let currentSlide = 0;
+        
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.querySelector('.nav-links').classList.remove('active');
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Modal functions
+        function openModal(serviceName) {
+            const modal = document.getElementById('modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalText = document.getElementById('modal-text');
+            
+            modalTitle.textContent = serviceName;
+            modalText.textContent = `¡Gracias por tu interés en ${serviceName}! Nos pondremos en contacto contigo pronto para discutir este servicio en detalle.`;
+            
+            modal.style.display = 'flex';
+            
+            // Add event listener to close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        // Form submission handler
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Simulate form submission
+            console.log('Datos del formulario:', data);
+            
+            // Show success message
+            openModal('Mensaje Enviado');
+            document.getElementById('modal-text').textContent = '¡Gracias por contactarnos! Hemos recibido tu mensaje y nos pondremos en contacto contigo pronto.';
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        // Add some interactive effects
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Dynamic year in footer
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentYear = new Date().getFullYear();
+            const yearElements = document.querySelectorAll('footer p');
+            if (yearElements.length > 0) {
+                yearElements[0].innerHTML = yearElements[0].innerHTML.replace('2024', currentYear);
+            }
+        });
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // Keyboard navigation for accessibility
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+                document.querySelector('.nav-links').classList.remove('active');
+            }
+        });
+
+        // Add parallax effect to hero section
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Dynamic service counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.price');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent.replace(/[^0-9]/g, '')) || 100;
+                let current = 0;
+                const increment = target / 100;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    if (counter.textContent.includes('$')) {
+                        counter.innerHTML = counter.innerHTML.replace(/\d+/, Math.floor(current));
+                    }
+                }, 20);
+            });
+        }
+
+        // Trigger counter animation when services section is visible
+        const servicesSection = document.querySelector('.services');
+        if (servicesSection) {
+            observer.observe(servicesSection);
+        }
+    </script>
 </body>
 </html>
