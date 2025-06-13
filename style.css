@@ -1,4 +1,5 @@
-* {
+
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -275,38 +276,6 @@
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 5px;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 1rem;
-            border: 2px solid #eee;
-            border-radius: 10px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #2d5016;
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            height: 120px;
         }
 
         /* Footer */
